@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<meta name="description" content="Cool webpage">
+<meta name="keywords" content="Cool, HTML, Document">
+<meta name="author" content="Bayoh">
+<meta name="viewport" content="width="device-width, initial-scale=1.0">
+<meta https-equiv="refresh" content="30">
+<head>
+   <link rel="icon" type="image/png" href="C:\Users\yvonne\Downloads\browser.png"/>
+   <style>
+        /* Basic styling for the form */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="number"],
+        textarea {
+            width: 20%;
+            padding: 8px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+        }
+    </style>
+ <!-- Emojionearea CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/emojionearea@3.4.1/dist/emojionearea.min.css">
+<head>
+<details>
+<summary>Open Me</summary>
+<p>This my HTML Arsenal<p>
+<details>
+<body bgcolor="aqua">
+  <p>
+     <a href="https://www.google.com" target=_blankS  title="search engine">GOOGLE<a>
+  </p>
+  <p>
+     <table class="table table-hover table-striped spaceLeft " bgcolor= "black" width="300">
+        <tr bgcolor="grey">
+           <th width="100"><FONT COLOR="white">First_Name</th>
+           <th width="100"><FONT COLOR="white">Last_Name</th>
+           <th width="100"><FONT COLOR="white">Marks</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="left">
+           <th width="100"><FONT COLOR="black">Sonoo</th>
+           <th width="100"><FONT COLOR="black">Jaiswal</th>
+           <th width="100"><FONT COLOR="black">60</th>
+        </tr>
+        <tr bgcolor="white" align="left">
+           <th width="100"><FONT COLOR="black">James</th>
+           <th width="100"><FONT COLOR="black">William</th>
+           <th width="100"><FONT COLOR="black">80</th>
+        </tr>
+        <tr bgcolor="lightgrey" align="left">
+           <th width="100"><FONT COLOR="black">Swati</th>
+           <th width="100"><FONT COLOR="black">Sironi</th>
+           <th width="100"><FONT COLOR="black">82</th>
+        </tr>
+        <tr bgcolor="white" align="left">
+           <th width="100"><FONT COLOR="black">Chetna</th>
+           <th width="100"><FONT COLOR="black">Singh</th>
+           <th width="100"><FONT COLOR="black">72</th>
+        </tr>
+     </table>
+ </p>
+ <p>
+   <strong>Please fill in this form</strong>
+  <form>
+    <div>
+      <label for="fname">First Name</label>
+       <input type="text" id="fname" name="fname" placeholder="Nikola" required>
+   </div>
+   <br>
+   <div>
+     <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" placeholder="Tesla" required>
+   </div>
+   <br>
+   <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="niktesla@gmail.com" required>
+   </div>
+   <br>
+   <div>
+     <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+254(0)7** *** ***" required>
+   </div>
+   <br>
+   <div>
+     <label for="bdate">Date of Birth</label>
+      <input type="date" id="bdate" name="bdate" required>
+   </div>
+   <br>
+   <div>
+     <label for="Quality">Number of units currently under taking</label>
+      <input type="number" id="Quality" name="Quality" >
+   </div>
+  </p>
+  <p>
+    <label for"setcolor">Set color</label>
+    <input type="color" id="setcolor">
+  </p>
+<p>
+<a href="tel:0713808022">Call Brayoh<a>
+</p>
+<p>
+<label for="skills">Web Dev Skills</label>
+<pogress id="skills" value="50" max="100">
+</p>
+ <h2>Emoji Picker</h2>
+    <textarea id="emoji-picker"></textarea>
+
+    <!-- Emojionearea JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emojionearea@3.4.1/dist/emojionearea.min.js"></script>
+
+    <script>
+        // Initialize Emojionearea
+        $(document).ready(function() {
+            $("#emoji-picker").emojioneArea({
+                pickerPosition: "bottom"
+            });
+        });
+    </script> 
+</p>
+ <!-- changing background color -->
+<section>
+<p>
+<select name="clr" onchange="document.bgColor=this.options[this.selectedIndex].value" size="1">
+    <br>
+    <option value="black">black
+        <option value="orange">orange
+            <option value="flamingred">fuschia
+                <option value="lightyellow">light yellow
+                    <option value="green">green
+                        <option value="cyan">cyan
+                            <option value="yellow">yellow
+                                <option value="red">red
+                                    <option value="white">white</option>
+</select>&nbsp;&nbsp;Background Color
+
+<br>
+ <!-- changing text color -->
+<select name="clr" onchange="document.fgColor=this.options[this.selectedIndex].value" size="1">
+    <br>
+    <option value="black">black
+        <option value="orange">orange
+            <option value="flamingred">fuschia
+                <option value="lightyellow">light yellow
+                    <option value="cyan">cyan
+                        <option value="yellow">yellow
+                            <option value="red">red
+                                <option value="white">white</option>
+</select>&nbsp;&nbsp;Text Color
+</p>
+</section>
